@@ -35,24 +35,15 @@ body {
 
 .container {
   position: absolute;
+  top: 20px;
+  left: 20px;
+  /*flex-direction: column;*/
   display: flex;
   justify-content: space-around;
   width: auto;
-  padding: 20px;
   gap: 50px;
 }
 
-.container--column {
-  right: 0;
-  flex-direction: column;
-}
-
-.container--row {
-  flex-direction: row;
-  bottom: 50px;
-  right: 0px;
-  width: 500px;
-}
 
 .button {
   width: 80px;
@@ -78,8 +69,9 @@ body {
 .is-active {
   animation-name: active;
   animation-fill-mode: forwards;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
+  color: tomato;
 }
 
 @keyframes active {
@@ -88,8 +80,9 @@ body {
     outline-offset: 10px;
   }
   50% {
-    outline: 2px solid greenyellow;
+    outline: 2px solid black;
     outline-offset: 10px;
+    color: black;
   }
   100% {
     outline: 2px solid tomato;
