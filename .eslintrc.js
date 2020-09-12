@@ -11,12 +11,13 @@ module.exports = {
   },
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
-    'semi': ['error', 'always'],
+    // 'semi': ['error', 'always'],
+    'semi': 'off',
     'arrow-parens': ['error', 'as-needed'],
     'object-curly-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
     'quotes': ['error', 'single'],
-    'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 0 }],
+    'no-multiple-empty-lines': ['error', { 'max': 5, 'maxEOF': 0 }],
     'eol-last': ['error', 'always'],
   },
 };

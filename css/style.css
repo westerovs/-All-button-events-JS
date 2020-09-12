@@ -6,56 +6,76 @@
   margin: 0;
 }
 
-html,
+html {
+  height: 100%;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   font-size: 18px;
   font-family: Geometria, sans-serif;
-  background-color: #2C7580;
-  background-image: linear-gradient(120deg, gray, rgb(37, 36, 36), rgb(37, 36, 36));
-  background-repeat: no-repeat;
+  background-color: black;
   color: #ccc;
+  user-select: none;
 }
 
-body {
-  padding: 30px;
-}
-
-/* relative */
 .wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  height: 900px;
   position: relative;
+  background: url(../img/0.jpg);
+  background-position: -220px center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+
+.container {
+  position: absolute;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  width: 400px;
+  width: auto;
+  padding: 20px;
   gap: 50px;
-  margin: 50px auto;
-  padding: 50px;
-  border: 4px groove gray;
+}
+
+.container--column {
+  right: 0;
+  flex-direction: column;
+}
+
+.container--row {
+  flex-direction: row;
+  bottom: 50px;
+  right: 0px;
+  width: 500px;
 }
 
 .button {
-  margin: 10px;
-  width: 100px;
-  height: 100px;
-  background-color: tomato;
-  color: black;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  background-image: linear-gradient(-150deg, gray, black);
+  background-repeat: no-repeat;
+  color: tomato;
   outline: none;
   border: none;
   border-radius: 50%;
-  box-shadow: 5px 5px 5px black;
-  font-size: 18px;
+  box-shadow: 3px 6px 5px rgb(17, 16, 16);
+  font-size: 16px;
   font-weight: bold;
   transition: 0.2s;
 }
 
 .button--press {
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 1px 1px 1px black;
   background-color: greenyellow;
 }
 
-.button--active {
+.is-active {
   animation-name: active;
   animation-fill-mode: forwards;
   animation-duration: 3s;
@@ -66,16 +86,13 @@ body {
   0% {
     outline: 2px solid tomato;
     outline-offset: 10px;
-    color: white;
   }
   50% {
     outline: 2px solid greenyellow;
     outline-offset: 10px;
-    color: white;
   }
   100% {
     outline: 2px solid tomato;
     outline-offset: 10px;
-    color: white;
   }
 }
