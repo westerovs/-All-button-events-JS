@@ -3,9 +3,10 @@
 <br>
 <br>
 <b>RUN code:</b>
+https://westerovs.github.io/-All-button-events-JS/
 <br>
 При перезагрузке изображения - убедитесь что не стоит галочка <b>disable cashe</b> в инструментах разработчика(f12 -> network, иначе изображение будет перезагружаться каждое нажатие
-https://westerovs.github.io/-All-button-events-JS/
+<br>
 <br>
 <b>Youtube video:</b>
 <br>
