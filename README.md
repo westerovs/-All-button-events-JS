@@ -1,5 +1,4 @@
 # Все основные события кнопок, в игровом виде
-<br>
 <b>RUN code:</b>
 https://westerovs.github.io/-All-button-events-JS/
 <br>
